@@ -1,0 +1,77 @@
+/* Danielle Monroe */
+
+/* styles the header, positioning the icon */
+body{
+    width: 960px;
+    position: static;
+    font: 24pt;
+}
+
+#header{
+    width: 750px;
+    padding: 20px;
+    margin: 20px;
+}
+#container{
+    width: 90px;
+    float: left;
+}
+
+img{
+    width: 90px;
+}
+
+/* Styles the fonts */
+h1{
+    color: #0924B2;
+    font: 40pt;
+    font-family: Helvetica Neue, Roboto, serif;
+    font-weight: bold;
+}
+
+h2,h3{
+    color: #222528;
+    font-family: Helvetica Neue, Roboto, serif;
+    font: 32pt;
+}
+
+/* Gives borders on the Home page and styles buttons */
+
+#member,#join{
+    width: 750px;
+    padding: 20px;
+    margin: 20px;
+    border: solid;
+    text-align: center;
+}
+
+button{
+    background-color: #7C7D82;
+    font: 14pt;
+    border-radius: 6px;
+    color: #D7DADD;
+}
+
+button:hover{
+    background-color: #2649DB;
+
+}
+
+/* styles form */
+#regForm{
+    width: 750px;
+    margin: 40px;
+    border-radius: 40px;
+}
+
+fieldset{
+    width: 225px;
+    padding: 25px;
+    border: solid;
+    list-style-type: none;
+    background: #2649DB;
+    opacity: .95;
+    color: #D7DADD;
+    line-height: 145%;
+}
+

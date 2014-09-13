@@ -49,7 +49,7 @@
             <img src="images/images/develop.png"/>
          </div>
         <h1> Develop Link </h1>
-        <h3> HEY! Lets Start Collaborating! </h3>
+        <h3 class="slogan"> We Can Get It Done Together </h3>
         </div>
         <div id="member">
 
@@ -58,10 +58,14 @@
             <label> Member ID</label>
             <input type="text" name="memberID"
              placeholder="JSmith@devlink.com"
-             required/>
+             required
+             type="text"
+             class="masterTooltip"/>
             <label> Password</label>
             <input name="password" placeholder="password"
-             required/>
+             required
+             type="text"
+             class="masterTooltip"/>
             <button class="si">
             <a href="dashboard.html"> Sign In </a></button>
         </form>
@@ -71,8 +75,27 @@
         <h2> Join Today!</h2>
         <p> Join today and start collaborating with the great minds the world has to offer. If you are a Web, Mobile, or Gaming developer and you need help or like to give some, this is the place for you. And the best part... IT'S FREE!!</p>
         <button class="su">
-            <a href="registration.html"> Submit </a></button>
+            <a href="registration.html" class="masterTooltip"> Submit </a></button>
     </div>
+
+
+
+<style type="text/css">
+    .tooltip{
+        display: none;
+        position: absolute;
+        border: 1px solid;
+        background-color: #2a2a2b;
+        color: #2649DB;
+    }
+</style>
+
+
+
+    <script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js">
+    </script>
+
+    <script type="text/javascript" src="js/main.js"></script>
 
 
 </body>

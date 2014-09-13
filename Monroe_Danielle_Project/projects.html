@@ -1,0 +1,114 @@
+<!-- Danielle Monroe -->
+
+<!doctype html>
+
+<!--
+	This is the main index of the application
+
+	All your script tags should be at the bottom of this file
+
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Welcome Back</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <!-- end CSS-->
+
+</head>
+
+<body>
+
+
+
+
+<!-- jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- plugins -->
+
+
+<!-- main -->
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+<div id="header">
+    <div id="container"> <!-- icon placed above the heading is more aesthetically pleasing -->
+        <img src="images/images/develop.png"/>
+    </div>
+    <h1> Develop Link </h1>
+    <h3 class="slogan"> We Can Get It Done Together </h3>
+    <div class="nav">
+        <h3 class="nav_welcome"> Welcome Back!</h3>
+
+        <button class="so">
+            <a href="index.html"> Sign Out </a></button>
+        <button class="bk">
+            <a href="dashboard.html"> Back </a></button>
+    </div>
+</div>
+<div class="add">
+    <p><a href="#overlay" class="addProject">Add Project</a></p>
+</div>
+
+<div id="project_list">
+    <h3> Projects </h3>
+    <form>
+        <fieldset>
+            <h3> Your Current Projects </h3>
+        </fieldset>
+
+    </form>
+
+</div>
+
+<div id="overlay">
+    <div id="modal">
+        <h2>Add a Project </h2>
+        <form id="projectForm">
+            <label>Project Name:</label>
+                <input name="projectName" type="text"/>
+            <label>Project Description</label>
+                <input name="projectDescription" type="text"/>
+            <label>Project Due Date:</label>
+                <input name="projectDueDate" type="text">
+
+            <label class="status">
+            <input type="radio" name="status" id="urgent">
+            </label>
+            <label class="status">
+                <input type="radio" name="status" id="normal">
+            </label>
+            <label class="status">
+                <input type="radio" name="status" id="delayed">
+            </label>
+            <label class="status">
+                <input type="radio" name="status" id="complete">
+            </label>
+
+            <button class="add">Add</button>
+            <span class="close">Close</span>
+        </form>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js">
+</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>

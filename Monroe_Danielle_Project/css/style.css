@@ -11,14 +11,24 @@ body{
     width: 750px;
     padding: 20px;
     margin: 20px;
+    background: #2a2a2b;
 }
 #container{
     width: 90px;
     float: left;
+
+}
+
+.slogan{
+    color: #2649DB;
 }
 
 img{
     width: 90px;
+}
+
+.nav_welcome{
+    color: #bbbbbc;
 }
 
 /* Styles the fonts */
@@ -75,3 +85,79 @@ fieldset{
     line-height: 145%;
 }
 
+#tabs{
+
+    width: 750px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#tabs_nav{
+    list-style-type: none;
+    width: 750px;
+    text-decoration: none;
+    padding: 5px;
+    background: #7c7d82;
+    height: 20px;
+}
+
+#tabs_nav li{
+    color: #2649DB;
+    display: inline;
+    padding: 50px;
+    width: 200px;
+
+
+}
+
+#tabs_info{
+    background:#2a2a2b;
+    color: #bbbbbc;
+    width: 750px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    color: #0924B2;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    border: solid;
+}
+
+#modal{
+    width: 200px;
+    background:#2a2a2b;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+#modal .close{
+    position: absolute;
+    border: solid;
+    cursor: pointer;
+}
+
+
+.status:checked{
+    background: #2649DB;
+}
+
+
+.add{
+    background-color: #000207;
+    font: 14pt;
+    border-radius: 6px;
+    color: #bbbbbc;
+    width: 100px;
+}

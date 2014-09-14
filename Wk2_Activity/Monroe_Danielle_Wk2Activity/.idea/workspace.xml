@@ -26,7 +26,7 @@
       <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="3" selection-start="4369" selection-end="4369" vertical-scroll-proportion="0.0" vertical-offset="947" max-vertical-offset="1545">
+            <state line="47" column="44" selection-start="2518" selection-end="2518" vertical-scroll-proportion="-4.9166665" vertical-offset="587" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="faq.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Includes/faq.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="930">
+            <state line="27" column="17" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="faq.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Includes/faq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.69632494" vertical-offset="0" max-vertical-offset="585">
+            <state line="24" column="21" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.60928434" vertical-offset="45" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="753" />
+    <option name="x" value="777" />
     <option name="y" value="22" />
     <option name="width" value="662" />
     <option name="height" value="650" />
@@ -148,7 +148,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Monroe_Danielle_Project" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -156,6 +156,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -166,23 +174,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -204,7 +204,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="753" y="22" width="662" height="650" extended-state="0" />
+    <frame x="777" y="22" width="662" height="650" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -259,6 +259,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Includes/faq.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Ex_Files_jQuery_FAQ-2/Exercise Files/3 - snippets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="6" selection-start="4285" selection-end="4291" vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="3" selection-start="4369" selection-end="4369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Includes/faq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="17" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Includes/faq.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="21" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="585">
           <folding />
         </state>
@@ -278,13 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="3" selection-start="4369" selection-end="4369" vertical-scroll-proportion="0.0" vertical-offset="947" max-vertical-offset="1545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Includes/faq.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="17" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="930">
@@ -292,9 +313,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="44" selection-start="2518" selection-end="2518" vertical-scroll-proportion="-4.9166665" vertical-offset="587" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Includes/faq.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.69632494" vertical-offset="0" max-vertical-offset="585">
+        <state line="24" column="21" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.60928434" vertical-offset="45" max-vertical-offset="585">
           <folding />
         </state>
       </provider>

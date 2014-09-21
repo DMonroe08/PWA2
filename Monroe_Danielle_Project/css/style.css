@@ -77,7 +77,7 @@ button:hover{
 }
 
 fieldset{
-    width: 225px;
+    width: 400px;
     padding: 25px;
     border: solid;
     list-style-type: none;
@@ -86,6 +86,8 @@ fieldset{
     color: #D7DADD;
     line-height: 145%;
 }
+
+
 
 /* styling for accordion */
 #tabs{
@@ -129,7 +131,7 @@ fieldset{
 }
 
 #modal{
-    width: 200px;
+    width: 400px;
     background:#2a2a2b;
     border-radius: 4px;
     overflow: hidden;
@@ -167,4 +169,30 @@ fieldset{
     border-radius: 6px;
     color: #bbbbbc;
     width: 100px;
+}
+
+#projectForm{
+    color: #D7DADD;
+    width: 275px;
+    padding: 25px;
+    border: solid;
+    list-style-type: none;
+    background: #2649DB;
+    opacity: .95;
+    color: #D7DADD;
+    line-height: 145%;
+    height: 200px;
+}
+
+#modal h2{
+    color: #0924B2;
+}
+
+/* styling for tool tips */
+.tooltip{
+        display: none;
+        position: absolute;
+        border: 1px solid;
+        background-color: #2a2a2b;
+        color: #2649DB;
 }

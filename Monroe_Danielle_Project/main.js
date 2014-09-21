@@ -171,6 +171,16 @@
 
     });
 
+    /* Dynamic Name */
+    $.getJSON('xhr/check_login.php', function(data){
+        console.log(data);
+        $.each(data, function(key, val){
+            console.log(val.fName);
+        $('.nav_welcome').html("Welcome Member:" + val.fName);
+
+        })
+});
+
 
     /* Register Page */
     $('.sub').on('click', function(){
@@ -248,14 +258,14 @@
             var result = response.project[i];
 
             $(".projects").append(
-                '<div style="border: 3px dotted black">' +
-                    "<input clas="projects" type='hidden' value='" + result.id +"'>"+
+                '<div style="border: 3px dotted #D7DADD">' +
+                    "<input clas='projects' type='hidden' value='" + result.id +"'>"+
                     "Project Name: " + result.projectName + "<br>" +
-            "Project Description: " + result.projectDescription + "<br>" +
-                   "Project Status: " +results.status + "<br>"
-                +'<button class="deleteButton">Delete</button>'
-                +'<buton class="editButton">Edit</buton>'
-                +'</div> <br>'
+                    "Project Description: " + result.projectDescription + "<br>" +
+                    "Project Status: " +results.status + "<br>"
+                    +'<button class="deleteButton">Delete</button>'
+                    +'<buton class="editButton">Edit</buton>'
+                    +'</div> <br>'
             );
 
         };
@@ -264,7 +274,7 @@
                 $.ajax({
                     url:'xhr/delete_project.php',
                     data:{
-                        projectID:results.id
+                        projectID:result.id
                     },
                     type: 'post',
                     dataType: 'json',
@@ -276,11 +286,11 @@
                     }else{
                         window.location.assign("projects.html");
                     };
+                    }
+                )});
 
-                )}
 
-        }
-        });
+        };
     });
 
 

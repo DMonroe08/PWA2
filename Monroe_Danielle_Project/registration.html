@@ -1,8 +1,10 @@
 <!-- Danielle Monroe -->
-<!doctype html>
+<html>
+<!--YOUR DOCTYPE CODE IS GIVING YOU ERRORS--->
+<!--<!doctype html>-->
 
-<!--
-	This is the main index of the application
+
+	<!--This is the main index of the application
 
 	All your script tags should be at the bottom of this file
 
@@ -32,15 +34,7 @@
 <body>
 
 
-
-
-<!-- jquery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- plugins -->
-
-
-<!-- main -->
-<script type="text/javascript" src="js/main.js"></script>
+<!--Add tooltips to this page-->
 
 
     <div id="header">
@@ -56,20 +50,30 @@
             <fieldset>
                 <ul>
                     <li><label id="fName"> First Name </label></li>
-                    <li> <input type="text" placeholder="John" required="true"/></li>
+                    <li> <input type="text" placeholder="John" class="masterTooltip" title="First Name" required/></li>
                     <li> <label id="lName"> Last Name </label></li>
-                    <li> <input type="text" placeholder="Smith" required="true"/></li>
+                    <li> <input type="text" placeholder="Smith" required/></li>
                     <li><label id="email"> Email Address </label></li>
-                    <li><input type="text" placeholder="JSmith@devlink.com" required="true"/></li>
+                    <li><input type="text" placeholder="JSmith@devlink.com" required/></li>
                     <li> <label id="pass"> Create a Password </label></li>
-                    <li><input type="text" required="true"/></li>
+                    <li><input type="text" required/></li>
                     <li> <label id="cpass"> Confirm Your Password </label></li>
-                    <li><input type="text" required="true"/></li>
+                    <li><input type="text" required/></li>
                     <li><button class="sub"> <a href="dashboard.html"> Submit </a></button></li>
                 </ul>
+                <p> Once you have registered, you will have to sign in on the home page.</p>
             </fieldset>
         </form>
+
     </div>
+
+
+<!-- jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- plugins -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 </html>

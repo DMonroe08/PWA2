@@ -1,7 +1,9 @@
 <!-- Danielle Monroe -->
 
-<!doctype html>
+<html>
 
+<!--YOUR DOCTYPE CODE IS GIVING YOU ERRORS--->
+<!--<!doctype html>-->
 <!--
 	This is the main index of the application
 	
@@ -28,6 +30,8 @@
 	<link rel="stylesheet" href="css/style.css?v=1">
 	<!-- end CSS-->
 	
+   
+
 </head>
 
 <body>
@@ -35,14 +39,8 @@
 	
 	
 	
-	<!-- jquery -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- plugins -->
 
 	
-	<!-- main -->
-	<script type="text/javascript" src="js/main.js"></script>
-
     <div id="header">
 
         <div id="container">
@@ -59,15 +57,15 @@
                 <input type="text" name="memberID"
                        placeholder="JSmith@devlink.com"
                        class="masterTooltip"
-                       title="Enter Memeber ID" required/>
+                       title="Enter Memeber ID" id="memberID" required/>
                 <label> Password</label>
                 <input name="password" placeholder="password"
                        required
                        type="text"
                        class="masterTooltip"
-                       title="Enter Password"/>
+                       title="Enter Password" id="password" required/>
                 <button class="si">
-                    <a href="dashboard.html"> Sign In </a></button>
+                    <a href="dashboard.html" id="singIn"> Sign In </a></button>
             </form>
     </div>
     <!-- Call to action -->
@@ -80,21 +78,13 @@
 
 
 
-<style type="text/css">
-    .tooltip{
-        display: none;
-        position: absolute;
-        border: 1px solid;
-        background-color: #2a2a2b;
-        color: #2649DB;
-    }
-</style>
 
 
 
-    <script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js">
-    </script>
-
+	<!-- jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- plugins -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
 

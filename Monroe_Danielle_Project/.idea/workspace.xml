@@ -68,13 +68,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="32" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.81781375" vertical-offset="1726" max-vertical-offset="2220">
+            <state line="142" column="32" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="1726" max-vertical-offset="2220">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-10.125" vertical-offset="477" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tasks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="7" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.9638298" vertical-offset="417" max-vertical-offset="960">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,8 +108,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/project.html" />
-        <option value="$PROJECT_DIR$/users.html" />
-        <option value="$PROJECT_DIR$/tasks.html" />
         <option value="$PROJECT_DIR$/../Wk3_Activity/Week3_Activity/Week3_Activity.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
@@ -101,6 +117,8 @@
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/users.html" />
+        <option value="$PROJECT_DIR$/tasks.html" />
       </list>
     </option>
   </component>
@@ -302,10 +320,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="32" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.81781375" vertical-offset="1726" max-vertical-offset="2220">
+        <state line="142" column="32" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="1726" max-vertical-offset="2220">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-10.125" vertical-offset="477" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="7" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.9638298" vertical-offset="417" max-vertical-offset="960">
+          <folding />
         </state>
       </provider>
     </entry>

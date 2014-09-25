@@ -190,9 +190,9 @@ fieldset{
 
 /* styling for tool tips */
 .tooltip{
-        display: none;
-        position: absolute;
-        border: 1px solid;
-        background-color: #2a2a2b;
-        color: #2649DB;
+    display: none;
+    position: absolute;
+    border: 1px solid;
+    background-color: #2a2a2b;
+    color: #2649DB;
 }

@@ -54,35 +54,36 @@
 </div>
 
 <div id="overlay">
-    <div id="modal">
-        <h2>Add a Project </h2>
-        <form id="projectForm">
-            <label>Project Name:</label>
-            <input name="projectName" type="text" id="pjName"/>
-            <label>Project Description</label>
-            <input name="projectDescription" type="text" id="pjDes"/>
-            <label>Project Due Date:</label>
-            <input name="projectDueDate" type="text" id="pjDD">
+<div id="modal">
+<h2>Add a Project </h2>
+<form id="projectForm">
+<label>Project Name:</label>
+<input name="projectName" type="text" id="pjName"/><br>
+<label>Project Description</label>
+<input name="projectDescription" type="text" id="pjDes"/><br>
+<label>Project Due Date:</label>
+<input name="projectDueDate" type="text" id="pjDD"><br>
 
-            <label class="status">
-                <input type="radio" name="status" id="urgent">
-            </label>
-            <label class="status">
-                <input type="radio" name="status" id="normal">
-            </label>
-            <label class="status">
-                <input type="radio" name="status" id="delayed">
-            </label>
-            <label class="status">
-                <input type="radio" name="status" id="complete">
-            </label>
 
-            <button class="add">Add</button>
-            <span class="close">Close</span>
-        </form>
-    </div>
+
+<label class="mystatus">Select Status:</label>
+<input type="radio" name="status" id="urgent">
+</label>
+<label class="mystatus">
+<input type="radio" name="status" id="normal">
+</label>
+<label class="mystatus">
+<input type="radio" name="status" id="delayed">
+</label>
+<label class="mystatus">
+<input type="radio" name="status" id="complete">
+</label>
+
+<button class="add">Add</button>
+<span class="close">Close</span>
+</form>
 </div>
-
+</div>
 <!-- jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- plugins -->

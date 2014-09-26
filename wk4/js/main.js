@@ -241,6 +241,62 @@
 
     });
 
+var projects = function(){
+
+$.ajax({
+url: 'xhr/get_projects.php',
+type: 'get',
+dataType: 'json',
+success: function(response){
+if(response.error){
+console.log(response.error);
+}else{
+
+for(var i=0, j=response.projects.length; i < j; i++){
+var result = response.projects[i];
+
+$(".projects").append(
+//'<div style="border:1px solid black">' +
+'<div id="sortable" class="ui-state-default">' +
+" <input class='projectid' type='hidden' value='" + result.id + "'>" +
+" Project Name: " + result.projectName + "<br>" +
+" Project Due Date: " + result.dueDate + "<br>" +
+" Project Description: " + result.projectDescription + "<br>" +
+" Project Status: " + result.status + "<br>"
++ '<button class="deletebtn">Delete</button>'
++ '<button class="editButton">Edit</button>'
++ '</div> <br>'
+);
+};
+$('.deletebtn').on('click', function(e){
+var pid = $(this).parent().find(".projectid").val();
+console.log('test delete');
+$.ajax({
+url: 'xhr/delete_project.php',
+data: {
+projectID: pid
+},
+type: 'POST',
+dataType: 'json',
+success: function(response){
+console.log('Testing for success');
+
+if(response.error) {
+alert(response.error);
+} else {
+//console.log(result.id);
+window.location.assign("projects.html");
+};
+}
+});
+}); // End Delete
+
+
+}
+}
+})
+}
+projects();
 
     /* Projects Display */
   //  var projects = function(){
@@ -257,7 +313,7 @@
 //
 //                        $(".projects").append(
 //
-//                            <div id="sorbale" class="ui-state-default"></div>'+
+//                            '<div id="sortable" class="ui-state-default"></div>'+
 //                                "<input class='projectID' type='hidden' value='" + result.id +"'>"+
 //                                "Project Name: " + result.projectName + "<br>" +
 //                                "Project Description: " + result.projectDescription + "<br>" +
@@ -286,11 +342,17 @@
 //                                    window.location.assign("projects.html");
 //                                };
 //
-//                                )}
+//							}
 //
-//                        }
-//                    });
+//                      });
 //                });
+//				
+//				
+//				}
+//			}
+//		});
+//	}
+//projects();
 
                 ///* Code for Datepicker */
 //                

@@ -1,8 +1,3 @@
-/*  
- Your Project Title
- Author: You
- */
-
 (function($){
 
 
@@ -57,7 +52,7 @@
 
     /* jQuery for tabs */
 
-    $('#tabs p').hide().ep(0).show();
+    $('#tabs p').hide().eq(0).show();
     $('#tabs p:not(:first)').hide();
     $('#tabs-nav li').click(function(e){
         e.preventDefault();
@@ -104,23 +99,23 @@
 
 
 
-    /* jQuery for Tool Tips */
-
-    $('.mastTooltip').hover(function(){
-        var title = $(this).attr('title');
-        $(this).data('tipText',title).removeAttr('title');
-        $('<p class="toolTip"></p>').text(title).appendTo('body').fadeIn('slow');
-    }, function(){
-        $(this).attr('title', $(this).data('tipText'));
-        $('.tooltip').remove();
-    }).mousemove(function(e){
-            var mousex = e.pageX + 15;
-            var mousey = e.pageY + 25;
-            $('.tooltip')
-                .css({top: mousey, left: mousex})
-
-        });
-
+    ///* jQuery for Tool Tips */
+//
+//    $('.mastTooltip').hover(function(){
+//        var title = $(this).attr('title');
+//        $(this).data('tipText',title).removeAttr('title');
+//        $('<p class="toolTip"></p>').text(title).appendTo('body').fadeIn('slow');
+//    }, function(){
+//        $(this).attr('title', $(this).data('tipText'));
+//        $('.tooltip').remove();
+//    }).mousemove(function(e){
+//            var mousex = e.pageX + 15;
+//            var mousey = e.pageY + 25;
+//            $('.tooltip')
+//                .css({top: mousey, left: mousex})
+//
+//        });
+//
 
     /* jQuery for Tool Tips */
 
@@ -204,13 +199,13 @@
                 password: password
             },
             success: function(response){
-            if (response.error){
-                alert(response.error);
-            }else{
-                window.location.assign('index.html');
-            }
-
-        });
+                if (response.error){
+                    alert(response.error);
+                }else{
+                    window.location.assign('index.html');
+                }
+			}
+            });
 
 
     });
@@ -248,70 +243,70 @@
 
 
     /* Projects Display */
-    var projects = function(){
-        $.ajax({
-            url: 'xhr/get_projects.php',
-            type: 'get',
-            dataType: 'json',
-            success: function(response){
-                if(response.error){
-                    console.log(response.error);
-                }else{
-                    for(var i= 0, j=response.projects.length; 1 < j; i++){
-                        var result = response.projects[i];
+  //  var projects = function(){
+//        $.ajax({
+//            url: 'xhr/get_projects.php',
+//            type: 'get',
+//            dataType: 'json',
+//            success: function(response){
+//                if(response.error){
+//                    console.log(response.error);
+//                }else{
+//                    for(var i= 0, j=response.projects.length; 1 < j; i++){
+//                        var result = response.projects[i];
+//
+//                        $(".projects").append(
+//
+//                            <div id="sorbale" class="ui-state-default"></div>'+
+//                                "<input class='projectID' type='hidden' value='" + result.id +"'>"+
+//                                "Project Name: " + result.projectName + "<br>" +
+//                                "Project Description: " + result.projectDescription + "<br>" +
+//                                "Project Status: " +result.status + "<br>"
+//                                +'<button class="deleteButton">Delete</button>'
+//                                +'<buton class="editButton">Edit</buton>'
+//                                +'</div> <br>'
+//                        );
+//
+//                    };
+//                    $('.deleteButton').on('click', function(e){
+//                        console.log('test delete');
+//                        $.ajax({
+//                            url:'xhr/delete_project.php',
+//                            data:{
+//                                projectID:results.id
+//                            },
+//                            type: 'post',
+//                            dataType: 'json',
+//                            success: function(response){
+//                                console.log('Testing');
+//                                if(response.error){
+//                                    alert(response.error);
+//
+//                                }else{
+//                                    window.location.assign("projects.html");
+//                                };
+//
+//                                )}
+//
+//                        }
+//                    });
+//                });
 
-                        $(".projects").append(
-
-                                '<div id="sorbale" class="ui-state-default"></div>'+
-                                "<input class='projectID' type='hidden' value='" + result.id +"'>"+
-                                "Project Name: " + result.projectName + "<br>" +
-                                "Project Description: " + result.projectDescription + "<br>" +
-                                "Project Status: " +result.status + "<br>"
-                                +'<button class="deleteButton">Delete</button>'
-                                +'<buton class="editButton">Edit</buton>'
-                                +'</div> <br>'
-                        );
-
-                    };
-                    $('.deleteButton').on('click', function(e){
-                        console.log('test delete');
-                        $.ajax({
-                            url:'xhr/delete_project.php',
-                            data:{
-                                projectID:results.id
-                            },
-                            type: 'post',
-                            dataType: 'json',
-                            success: function(response){
-                                console.log('Testing');
-                                if(response.error){
-                                    alert(response.error);
-
-                                }else{
-                                    window.location.assign("projects.html");
-                                };
-
-                                )}
-
-                        }
-                    });
-                });
-
-    /* Code for Datepicker */
-    $(function() {
-     $( ".datepicker" ).datepicker();
-     $( "#anim" ).change(function() {
-          $( ".datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
-           });
-      });
-
-        /* Code for Drag and Drop */
-     $(function() {
-     $( "#sortable" ).sortable({
-      placeholder: "ui-state-highlight"
-      });
-        $( "#sortable" ).disableSelection();
-      });
+                ///* Code for Datepicker */
+//                
+//                    $( ".datepicker" ).datepicker();
+//                    $( "#anim" ).change(function() {
+//                        $( ".datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+//                    });
+//                
+//
+//                /* Code for Drag and Drop */
+//                
+//                    $( "#sortable" ).sortable({
+//                        placeholder: "ui-state-highlight"
+//                    });
+//                    $( "#sortable" ).disableSelection();
+//              
 
 
             })(jQuery); // end private scope

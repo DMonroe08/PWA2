@@ -1,16 +1,3 @@
-<!-- Danielle Monroe -->
-<html>
-<!--YOUR DOCTYPE CODE IS GIVING YOU ERRORS--->
-<!--<!doctype html>-->
-<!--
-	This is the main index of the application
-
-	All your script tags should be at the bottom of this file
-
-	The only html element in the body is the container div
-	Your code should load your page templates into the container
--->
-
 <html lang="en">
 <head>
 
@@ -26,6 +13,9 @@
 
     <!-- CSS concatenated and minified via ant build script-->
     <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/jquery-us.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
     <!-- end CSS-->
 
 </head>
@@ -53,11 +43,14 @@
 </div>
 
 <div id="project_list">
-    <h1> Current Projects </h1>
-    <div class="projects" id="sortable">
+    <label> Projects </label>
+    <div class="projects" >
+        <ul id="sortable">
+        </ul>
 
 
     </div>
+
 </div>
 
 <div id="overlay">
@@ -66,24 +59,21 @@
         <form id="projectForm">
             <label>Project Name:</label>
             <input name="projectName" type="text" id="pjName"/>
-            <br>
             <label>Project Description</label>
             <input name="projectDescription" type="text" id="pjDes"/>
-            <br>
             <label>Project Due Date:</label>
-            <input name="projectDueDate" type="text" id="projectDD" class="datepicker">
-            <br>
+            <input name="projectDueDate" type="text" id="pjDD">
 
-            <label class="status">Urgent
+            <label class="status">
                 <input type="radio" name="status" id="urgent">
             </label>
-            <label class="status">Normal
+            <label class="status">
                 <input type="radio" name="status" id="normal">
             </label>
-            <label class="status">Delayed
+            <label class="status">
                 <input type="radio" name="status" id="delayed">
             </label>
-            <label class="status">Complete
+            <label class="status">
                 <input type="radio" name="status" id="complete">
             </label>
 
@@ -95,12 +85,9 @@
 
 <!-- jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <!-- plugins -->
 <script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/plugins/jquery-ui-1.11.1/jquery-ui.js"></script>
-
 
 </body>
 </html>

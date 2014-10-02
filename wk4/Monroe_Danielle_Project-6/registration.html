@@ -1,3 +1,17 @@
+<!-- Danielle Monroe -->
+<html>
+<!--YOUR DOCTYPE CODE IS GIVING YOU ERRORS--->
+<!--<!doctype html>-->
+
+
+<!--This is the main index of the application
+
+All your script tags should be at the bottom of this file
+
+The only html element in the body is the container div
+Your code should load your page templates into the container
+-->
+
 <html lang="en">
 <head>
 
@@ -13,9 +27,6 @@
 
     <!-- CSS concatenated and minified via ant build script-->
     <link rel="stylesheet" href="css/style.css?v=1">
-    <link rel="stylesheet" href="css/jquery-us.css">
-    <link rel="stylesheet" href="jquery-ui.min.css">
-    <link rel="stylesheet" href="jquery-ui.theme.css">
     <!-- end CSS-->
 
 </head>
@@ -28,7 +39,7 @@
 
 <div id="header">
     <div id="container">
-        <img src="images/develop.png"/>
+        <img src="images/images/develop.png"/>
     </div>
     <h1> Sign Up </h1>
     <button class="home"> <a href="index.html"> Home </a></button>
@@ -45,20 +56,22 @@
                 <li><label id="email"> Email Address </label></li>
                 <li><input type="text" placeholder="JSmith@devlink.com" required/></li>
                 <li> <label id="pass"> Create a Password </label></li>
-                <li><input type="password" required/></li>
+                <li><input type="text" required/></li>
                 <li> <label id="cpass"> Confirm Your Password </label></li>
-                <li><input type="password" required/></li>
-                <li><button class="sub"> <a href="dashboard.html"> Submit </a></button></li>
+                <li><input type="text" required/></li>
+                <li><button class="sub"> <a href="index.html"> Submit </a></button></li>
             </ul>
+            <p> Once you have registered, you will have to sign in on the home page.</p>
         </fieldset>
     </form>
+
 </div>
 
 
 <!-- jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- plugins -->
-<script type="text/javascript" src="js/query-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 

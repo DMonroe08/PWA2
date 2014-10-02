@@ -24,7 +24,7 @@
 
 <div id="header">
     <div id="container"> <!-- icon placed above the heading is more aesthetically pleasing -->
-        <img src="images/images/develop.png">
+        <img src="images/develop.png">
     </div>
     <h1> Develop Link </h1>
     <h3 class="slogan"> We Can Get It Done Together </h3>
@@ -42,40 +42,37 @@
 </div>
 
 <div id="project_list">
-    <label> Projects </label>
-    <div class="projects" >
-        <ul id="sortable">
-        </ul>
+<label> Projects </label>
+<div class="projects" id="sortable"> <!--Add the id to the div. Not a ul-->
 
-
-    </div>
 
 </div>
 
+</div>
 <div id="overlay">
 <div id="modal">
 <h2>Add a Project </h2>
 <form id="projectForm">
 <label>Project Name:</label>
 <input name="projectName" type="text" id="pjName"/><br>
-<label>Project Description</label>
+<label>Project Description:</label>
 <input name="projectDescription" type="text" id="pjDes"/><br>
 <label>Project Due Date:</label>
 <input name="projectDueDate" type="text" id="pjDD"><br>
 
 
 
-<label class="mystatus">Select Status:</label>
-<input type="radio" name="status" id="urgent">
-</label>
+<label class="mystatus">Select Status:</label><br>
+<input type="radio" name="status" id="urgent"> Urgent
+</label><br>
 <label class="mystatus">
-<input type="radio" name="status" id="normal">
-</label>
+<input type="radio" name="status" id="normal"> Normal
+</label><br>
 <label class="mystatus">
-<input type="radio" name="status" id="delayed">
-</label>
+<input type="radio" name="status" id="delayed"> Delayed
+</label><br>
 <label class="mystatus">
-<input type="radio" name="status" id="complete">
+<input type="radio" name="status" id="complete"> Complete
 </label>
 
 <button class="add">Add</button>

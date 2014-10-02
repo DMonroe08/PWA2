@@ -252,15 +252,15 @@
                 if(response.error){
                     console.log(response.error);
                 }else{
-                    for(var i= 0, j=response.projects.length; i < j; i++){    //You have a 1 instead of i ... i < j
+                    for(var i= 0, j=response.projects.length; 1 < j; i++){
                         var result = response.projects[i];
 
                        
 
 					$(".projects").append(
 
-						'<div id="sortable" class="ui-state-default"> '+ //removed the closed div tag  //added space before +
-						"<input class='projectID' type='hidden' value='" + result.id +"'>" +  //added space before +
+						'<div id="sortable" class="ui-state-default"> '+ //removed the closed div tag
+						"<input class='projectID' type='hidden' value='" + result.id +"'>"+
 						"Project Name: " + result.projectName + "<br>" +
 						"Project Description: " + result.projectDescription + "<br>" +
 						"Project Status: " +result.status + "<br>"
@@ -270,29 +270,29 @@
 				);
 
                     };
-                    $('.deleteButton').on('click', function(e){
-						var pid = $(this).parent().find(".projectid").val();
-                        console.log('test delete');
-                        $.ajax({
-                            url:'xhr/delete_project.php',
-                            data:{
-                                projectID: pid   //Changed this to match your variable.
-                            },
-                            type: 'post',
-                            dataType: 'json',
-                            success: function(response){
-                                console.log('Testing');
-                                if(response.error){
-                                    alert(response.error);
+                     $('.deletebtn').on('click', function(e){
+					var pid = $(this).parent().find(".projectid").val();   //This is changed to pick up the id of the project and delete it.
+			  		console.log('test delete');
+				    $.ajax({
+				        url: 'xhr/delete_project.php',
+				        data: {
+				            projectID: pid
+				        },
+				        type: 'POST',
+				        dataType: 'json',
+				        success: function(response){
+				            console.log('Testing for success');
 
-                                }else{
-                                    window.location.assign("projects.html");
-                                };
+							if(response.error) {
+								alert(response.error);
+							} else {
+								//console.log(result.id);
+								window.location.assign("projects.html");
+							};
+				        }
+				    });                                 
+				}); // End Delete
 
-							}
-
-                      });
-                });
 				
 				
 				}
@@ -304,21 +304,21 @@ projects();
 
 
 
-                /* Code for Datepicker */
-                
-                    $( ".datepicker" ).datepicker();
-                    $( "#anim" ).change(function() {
-                        $( ".datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
-                    });
-                
-
-                /* Code for Drag and Drop */
-                
-                    $( "#sortable" ).sortable({
-                        placeholder: "ui-state-highlight"
-                    });
-                    $( "#sortable" ).disableSelection();
-              
+                ///* Code for Datepicker */
+//                
+//                    $( ".datepicker" ).datepicker();
+//                    $( "#anim" ).change(function() {
+//                        $( ".datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+//                    });
+//                
+//
+//                /* Code for Drag and Drop */
+//                
+//                    $( "#sortable" ).sortable({
+//                        placeholder: "ui-state-highlight"
+//                    });
+//                    $( "#sortable" ).disableSelection();
+//              
 
 
             })(jQuery); // end private scope

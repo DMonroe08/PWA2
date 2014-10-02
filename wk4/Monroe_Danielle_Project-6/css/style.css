@@ -47,6 +47,8 @@ h2,h3{
     font: 32pt;
 }
 
+/* Gives borders on the Home page and styles buttons */
+
 #member,#join{
     width: 750px;
     padding: 20px;
@@ -66,12 +68,6 @@ button:hover{
     background-color: #2649DB;
 
 }
-#snippet{
-	width: 750;
-	padding: 10px;
-	margin: 20px;
-}
-	
 
 /* styles form */
 #regForm{
@@ -99,26 +95,22 @@ fieldset{
     padding: 20px;
     height: 150px;
     background-color:#2a2a2b;
-	margin: 20px;
-	
 }
 
 #tabs-nav{
     list-style-type: none;
     width: 750px;
     text-decoration: none;
-    padding: 20px;
-    background-color:#2a2a2b;
-    height: 30px;
-	margin: 20px;
+    padding: 5px;
+    background-color: #7c7d82;
+    height: 50px;
 }
 
 #tabs-nav li{
     color: #2649DB;
     display: inline;
     padding: 50px;
-    width: 750px;
-	margin: 20px;
+    width: 200px;
 }
 
 #tabs p{
@@ -177,24 +169,19 @@ fieldset{
     border-radius: 6px;
     color: #bbbbbc;
     width: 100px;
-	margin: 20px;
-}
-
-#project_list{
-	margin: 20px;
-	padding: 10px
 }
 
 #projectForm{
     color: #D7DADD;
-    width: 300px;
+    width: 275px;
     padding: 25px;
     border: solid;
     list-style-type: none;
     background: #2649DB;
     opacity: .95;
-    line-height: 150%;
-    height: 175px;
+
+    line-height: 145%;
+    height: 200px;
 }
 
 #modal h2{

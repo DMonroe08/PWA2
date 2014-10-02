@@ -1,3 +1,17 @@
+<!-- Danielle Monroe -->
+
+<html>
+
+<!--YOUR DOCTYPE CODE IS GIVING YOU ERRORS--->
+<!--<!doctype html>-->
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
 
 <html lang="en">
 <head>
@@ -14,8 +28,6 @@
 
     <!-- CSS concatenated and minified via ant build script-->
     <link rel="stylesheet" href="css/style.css?v=1">
-  <!--  <link rel="stylesheet" href="css/jquery-us.css">
-    <link rel="stylesheet" href="jquery-ui.theme.css">
     <!-- end CSS-->
 
 
@@ -32,7 +44,7 @@
 <div id="header">
 
     <div id="container">
-        <img src="images/develop.png"/>
+        <img src="images/images/develop.png"/>
     </div>
     <h1> Develop Link </h1>
     <h3 class="slogan"> We Can Get It Done Together </h3>
@@ -45,15 +57,15 @@
         <input type="text" name="memberID"
                placeholder="JSmith@devlink.com"
                class="masterTooltip"
-               title="Enter Memeber ID" required/>
+               title="Enter Memeber ID" id="memberID" required/>
         <label> Password</label>
         <input name="password" placeholder="password"
                required
                type="password"
                class="masterTooltip"
-               title="Enter Password"/>
+               title="Enter Password" id="password" required/>
         <button class="si">
-            <a href="dashboard.html"> Sign In </a></button>
+            <a href="dashboard.html" id="singIn"> Sign In </a></button>
     </form>
 </div>
 <!-- Call to action -->
@@ -72,12 +84,15 @@
 <!-- jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- plugins -->
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 </html>
+
+
+
 
 
 
